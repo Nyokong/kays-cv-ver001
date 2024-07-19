@@ -2,6 +2,8 @@
 
 import React from 'react'
 import { motion } from "framer-motion";
+import { links } from "@/lib/data";
+import Link from "next/link";
 
 export default function Header() {
     return <header className="z-[999] relative">
@@ -15,8 +17,14 @@ export default function Header() {
             </motion.div>
 
             <nav className="fixed top-[0.15rem] left-1/2 h-12
-            -translate-x-1/2 py-2">
-
+            -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
+                <ul className=''>
+                    {links.map((link) => (
+                            <li key={link.hash}>
+                                <Link href={link.hash}>{link.name}</Link>
+                            </li>
+                    ))}
+                </ul>
             </nav>
     </header>;
 }
