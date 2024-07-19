@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Header from '@/components/header';
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -18,11 +19,7 @@ export default function RootLayout({
     <html lang="en">
       {/* Include a shared UI here e.g a header or Sidebar */}
       <body className={`${inter.className}`}>
-      <div className="flex md:container md:mx-auto  ">
-        <div className="flex-1 rounded-full h-[40px]">Home</div>
-        <div className="flex-1 ">Skills</div>
-        <div className="flex-1 ">Contact</div>
-      </div>
+        <Header />
         {children}
       </body>
     </html>
