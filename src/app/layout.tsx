@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import Header from '@/components/header';
-import { Inter } from "next/font/google";
+import Header from '@/src/app/components/header';
+import { Josefin_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Josefin_Sans({ subsets: ["latin"], display:'swap',
+  weight:['700']
+});
 
 export const metadata: Metadata = {
   title: "Khotso Nyokong | Portfolio",
@@ -20,6 +22,7 @@ export default function RootLayout({
       {/* Include a shared UI here e.g a header or Sidebar */}
       <body className={`${inter.className}`}>
         <Header />
+
         {children}
       </body>
     </html>
