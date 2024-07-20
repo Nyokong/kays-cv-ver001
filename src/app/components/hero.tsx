@@ -35,13 +35,13 @@ export default function hero() {
 
                     <div className="flex space-x-2 text-sm font-medium">
                         <div className="flex space-x-4 px-6 py-4">
-                            <button className="px-6 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-teal-400 text-black" type="submit">
+                            <button className="hover:underline px-6 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-teal-400 text-black" type="submit">
                                 Email
                             </button>
-                            <button className="px-6 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-teal-400 text-slate-900" type="button">
+                            <button className="hover:underline px-6 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-teal-400 text-slate-900" type="button">
                                 download my cv
                             </button>
-                            <button className="px-6 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-blue-400 text-white" type="submit">
+                            <button className="hover:underline px-6 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-blue-400 text-white" type="submit">
                                 Linked In
                             </button>
                         </div>

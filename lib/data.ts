@@ -60,6 +60,54 @@ export const experiencesData = [
     },
 ] as const;
 
+export const workExperiences = [
+    {
+        company: "Tech Innovators Inc.",
+        role: "Junior Software Engineer",
+        duration: "Jan 2023 - Present",
+        responsibilities: [
+        "Developed and maintained web applications using React and Node.js.",
+        "Collaborated with cross-functional teams to define and design new features.",
+        "Participated in code reviews and provided constructive feedback.",
+        "Implemented unit and integration tests to ensure code quality."
+        ]
+    },
+    {
+        company: "NextGen Solutions",
+        role: "Junior Software Developer",
+        duration: "Jun 2022 - Dec 2022",
+        responsibilities: [
+        "Assisted in the development of mobile applications using Flutter.",
+        "Worked closely with senior developers to troubleshoot and debug issues.",
+        "Contributed to the design and implementation of RESTful APIs.",
+        "Maintained documentation for software projects."
+        ]
+    },
+    {
+        company: "Innovatech",
+        role: "Software Engineering Intern",
+        duration: "Jan 2022 - May 2022",
+        responsibilities: [
+        "Supported the development team in building web applications with Angular.",
+        "Performed testing and debugging of software applications.",
+        "Collaborated with UX/UI designers to improve user experience.",
+        "Assisted in the deployment of applications to cloud platforms."
+        ]
+    },
+    {
+        company: "CodeCrafters",
+        role: "Junior Backend Developer",
+        duration: "Jul 2021 - Dec 2021",
+        responsibilities: [
+        "Developed backend services using Python and Django.",
+        "Integrated third-party APIs and services.",
+        "Optimized database queries for performance improvements.",
+        "Participated in daily stand-up meetings and sprint planning."
+        ]
+    },
+  ]as const;
+  
+
 export const projectsData = [
     {
         title: "CorpComment",
