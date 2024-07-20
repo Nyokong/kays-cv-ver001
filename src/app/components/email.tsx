@@ -3,7 +3,7 @@ import React from 'react'
 export default function email() {
     return (
         <div className='flex w-[400px] h-[230px] justify-center 
-        bg-gray-200'>
+        bg-gray-200 md:max-w-[1500px]'>
 
             <form className='grid
             place-content-center '>
