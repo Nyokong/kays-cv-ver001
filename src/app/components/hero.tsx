@@ -10,6 +10,7 @@ export default function hero() {
                     className="w-full h-full object-cover"
                     width={200}
                     height={200}
+                    quality={100}
                     alt="Profile Image - Author"
                 />
             </div>

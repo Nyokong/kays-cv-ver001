@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import ing09 from '@/public/ing09.png';
 
 export const links = [
     {
@@ -31,6 +32,30 @@ export const links = [
         name: "Contact",
         hash: "#contact",
     },
+] as const;
+
+export const xp = [
+    {
+        img: ing09,
+        name: "Drawing",
+        role: "Junior Software Engineer",
+    },
+    {
+        img: ing09,
+        name: "Running",
+        role: "Junior Software Engineer",
+    },
+    {
+        img: ing09,
+        name: "Illustration",
+        role: "Junior Software Engineer",
+    },
+    {
+        img: ing09,
+        name: "G.Designer",
+        role: "Junior Software Engineer",
+    },
+    
 ] as const;
 
 export const experiencesData = [

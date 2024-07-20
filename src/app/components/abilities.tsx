@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import Image, { StaticImageData } from 'next/image';
+import { xp } from '@/lib/data'; // Adjust the path as necessary
+
 
 export default function abilities() {
   return (
@@ -30,14 +33,45 @@ export default function abilities() {
                 <h1 className='w-full bg-black text-white py-5 px-4'>
                     Abilities/Skills
                 </h1>
-                <div className='grid grid-cols-4 grid-gap-4 grid-rows-4'>
-                    <div className='px-4 py-4 bg-teal-600 rounded-sm row-span-4 grid-col-1 h-full'>01</div>
-                    <div className='px-4 py-4 bg-teal-400 rounded-sm row-span-4 grid-col-2'>02</div>
-                    <div className='px-4 py-4 bg-teal-500 rounded-sm grid-col-3'>03</div>
-                    <div className='px-4 py-4 bg-teal-400 rounded-sm grid-col-4'>04</div>
+                <div className='grid grid-cols-4 grid-gap-4'>
+                    {xp.map((exp, index) => (
+                        <div key={index} className='grid grid-cols-4 gap-4 items-center'>
+                            <React.Fragment key={index}>
+                                <Exp {...exp}/>
+                            </React.Fragment>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
     </div>
   );
 }
+{/**
+<h2 >{exp.name}</h2>
+                            <h3 className='text-gray-200'>{exp.role}</h3>
+ */}
+
+
+ interface ProjectProps {
+    img: string | StaticImageData;
+    name: string;
+    role: string;
+  }
+
+function Exp({img,name,role}: ProjectProps) {
+    return (
+        <div className="grid grid-flow-row auto-rows-max hover:auto-rows-min p-3 px-2">
+            <div className='flex justify-center '>
+                <Image 
+                    className="" 
+                    src={img} 
+                    alt={name} 
+                />
+            </div>
+            <div className='text-lg bg-teal-300 w-full'>{name}</div>
+            <div className='text-[10px] flex flex-row items-center w-full'>{role}</div>
+        </div>
+        
+    );
+};
