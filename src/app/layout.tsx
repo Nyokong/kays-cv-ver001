@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       {/* Include a shared UI here e.g a header or Sidebar */}
       <body className={`${inter.className}`}>
-        <Header />
+        
 
         {children}
       </body>
