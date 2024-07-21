@@ -10,7 +10,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
             <div className="flex w-48 mb-10 relative z-10 before:absolute before:top-1 before:left-1 before:w-full before:h-full before:bg-teal-400">
                 <div className="absolute z-10 inset-0 w-full h-full object-cover">
-                    <h1 className="text-[40px] font-bold text-gray-500">
+                    <h1 className="flex justify-center align-items text-[40px] w-[200px] font-bold text-gray-500">
                         Portfolio
                     </h1>
                     <nav>

@@ -29,7 +29,15 @@ export default function abilities() {
 
         <div className='bg-gray-200 col-span-2'>
             <div className='bg-gray-200 relative'>
-                <div className='absolute top-0 right-0 bg-black text-white py-5 px-4'>bee</div>
+                {/* {<div className='absolute top-0 right-0 bg-black text-white py-5 px-4'>
+                <Image 
+                    className="w-24 h-24 rounded-full mx-auto" 
+                    src="/image.png" 
+                    alt="{name}" 
+                    width={300}
+                    height={300}
+                />
+                </div>} */}
                 <h1 className='w-full bg-black text-white py-5 px-4'>
                     Abilities/Skills
                 </h1>
@@ -61,15 +69,16 @@ export default function abilities() {
 
 function Exp({img,name,role}: ProjectProps) {
     return (
-        <div className="grid grid-flow-row auto-rows-max hover:auto-rows-min p-3 px-2">
-            <div className='flex justify-center '>
+        <div className="grid grid-flow-row auto-rows-max hover:auto-rows-min p-3 px-2 w-40">
+            <div className='md:flex p-8 md:p-0 '>
                 <Image 
-                    className="" 
+                    className="w-24 h-24 rounded-full mx-auto" 
                     src={img} 
                     alt={name} 
                 />
             </div>
-            <div className='text-lg bg-teal-300 w-full'>{name}</div>
+            <div className='flex align-center justify-center text-lg bg-teal-300 w-full 
+            mt-4 py-4 p-2'>{name}</div>
             <div className='text-[10px] flex flex-row items-center w-full'>{role}</div>
         </div>
         
