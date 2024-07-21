@@ -70,7 +70,7 @@ export default function abilities() {
 function Exp({img,name,role}: ProjectProps) {
     return (
         <div className="grid grid-flow-row auto-rows-max hover:auto-rows-min p-3 px-2 w-40">
-            <div className='md:flex p-8 md:p-0 '>
+            <div className='md:flex p-8 md:p-0 hover:drop-shadow'>
                 <Image 
                     className="w-24 h-24 rounded-full mx-auto" 
                     src={img} 
@@ -78,8 +78,13 @@ function Exp({img,name,role}: ProjectProps) {
                 />
             </div>
             <div className='flex align-center justify-center text-lg bg-teal-300 w-full 
-            mt-4 py-4 p-2'>{name}</div>
-            <div className='text-[10px] flex flex-row items-center w-full'>{role}</div>
+            mt-4 py-4 p-2 cursor-pointer hover:drop-shadow hover:text-teal-600'>
+                {name}
+            </div>
+            <div className='text-[10px] flex flex-row items-center 
+            w-full h-[30px] justify-center'>
+                {role}
+            </div>
         </div>
         
     );
