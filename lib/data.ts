@@ -6,6 +6,10 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import ing09 from '@/public/ing09.png';
+import rocket from '@/public/accelerate-svgrepo-com.svg';
+import drawing from '@/public/drawing-tablet-svgrepo-com.svg';
+import vector from '@/public/vector-svgrepo-com.svg';
+import illustration from '@/public/illustration-of-mobile-game-machine-svgrepo-com.svg';
 
 export const links = [
     {
@@ -36,22 +40,22 @@ export const links = [
 
 export const xp = [
     {
-        img: ing09,
+        img: drawing,
         name: "Drawing",
         role: "Junior Software Engineer",
     },
     {
-        img: ing09,
-        name: "Running",
-        role: "Junior Software Engineer",
+        img: rocket,
+        name: "Rockets",
+        role: "spaceX, Blue Origin",
     },
     {
-        img: ing09,
+        img: illustration,
         name: "Illustration",
         role: "Junior Software Engineer",
     },
     {
-        img: ing09,
+        img: vector,
         name: "G.Designer",
         role: "Junior Software Engineer",
     },
