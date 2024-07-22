@@ -21,7 +21,6 @@ export default function Home() {
     <div className="">
         <motion.div className="progress-bar  
         h-[10px] bg-red-800 z-[-50px]" style={{ scaleX }} />
-        
         <Header />
         
       <main className="flex items-center justify-center">
